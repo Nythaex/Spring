@@ -1,0 +1,224 @@
+body {
+    margin: 0 5cm;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+li {
+    display: inline-block;
+    padding-left: 0.5cm;
+    font-size: 0.5cm;
+    text-align: right;
+}
+
+header {
+    margin-top: 1cm;
+}
+
+script {
+    color: #50b9e1;
+}
+
+nav>ul {
+    margin-left: 39.5cm;
+    
+}
+
+li>ul a {
+    border: black solid;
+    border-radius: 50%;
+    padding: 0.09cm;
+}
+
+.logo {
+    padding-right: 50cm;
+}
+
+header>h4>span>a, header>h4>span {
+    color: #50b9e1;
+}
+
+header>h4 {
+    color: black;
+    font-size: 0.8cm;
+    display: inline;
+    float: left;
+    margin-top: -0.3cm;
+}
+
+section:first-child {
+    margin-top: 0%;
+    background: url("../Images/kids_main.jpg") no-repeat;
+    height: 32cm;
+}
+
+section:first-child>article>p {
+    margin-top: 0cm;
+    font-size: 3cm;
+    padding-left: 4.5cm;
+    width: 20cm;
+    color: white;
+    padding-top: 10cm;
+}
+
+section:first-child>article>button {
+    margin-left: 4.5cm;
+    color: white;
+    border: solid white 0.1cm;
+    background: transparent;
+    font-size: 1cm;
+    cursor: pointer;
+}
+
+section:first-child>article>button:hover {
+    margin-left: 4.5cm;
+    color: white;
+    border: solid white 0.1cm;
+    background: #50b9e1;
+    font-size: 1cm;
+    cursor: pointer;
+}
+
+section:nth-child(2)>article {
+    text-align: center;
+}
+
+section:nth-child(2) h4 {
+    font-size: 52px;
+    color: gray;
+}
+
+section:nth-child(2) a {
+    color: #50b9e1;
+}
+
+section:nth-child(2) p {
+    color: gray;
+    width: 30cm;
+    padding-left: 13cm;
+    font-size: 25px;
+}
+
+section:nth-child(3) {
+    background-color: #50b9e1;
+    text-align: center;
+    color: white;
+    
+}
+
+section:nth-child(3) h4 {
+    font-size: 1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+}
+
+section:nth-child(3) p {
+    font-size: 0.6cm;
+    width: 11cm;
+}
+
+section:nth-child(3)>article {
+    display: inline-block;
+    width: 12cm;
+    padding-left: 3cm;
+}
+
+section:nth-child(3) img {
+    height: 2cm;
+    padding-right: 1cm;
+}
+
+footer{
+    margin-top: 1cm;
+    background-color: #50b9e1;
+    color: gray;
+}
+footer>p{
+    padding-left: 6cm;
+    display: inline-block;
+    font-size: 0.5cm;
+   
+}
+footer a{
+    display: inline-block;
+    border: gray solid;
+    border-radius: 50%;
+    height: 0.5cm;
+
+    
+    padding: 0.09cm;
+}
+footer ul{
+    display: inline-block;
+    margin-left: 34cm;
+}
+
+
+section:nth-child(4){
+    
+    color: gray;
+}
+
+section:nth-child(4) h4{
+    
+    font-size: 1cm;
+    text-align: center;
+}
+section:nth-child(4)>p{
+    font-size: 0.5cm;
+    width: 19cm;
+    margin: auto;
+    margin-bottom: 1.5cm;
+    text-align: center;
+}
+section:nth-child(4)>article{
+    display: inline-block;
+    width: 17cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    text-align: left;
+}
+section:nth-child(4) img{
+    height: 10cm;
+    width: 16cm;
+}
+
+section:nth-child(4)>article>div:first-child{
+    font-size: 1cm;
+}
+section:nth-child(4)>article>button{
+    background-color: white;
+    color: #50b9e1;
+    border: #50b9e1 solid;
+    font-size: 0.5cm;
+    padding: 0.2cm;
+}
+section:nth-child(4)>article>p:nth-child(3){
+    background-color: #50b9e1;
+    font-size: 1cm;
+    width: 1.5cm;
+    color: white;
+    padding: 0.3cm;
+    margin-left: 7.8cm;
+    
+    display: inline;
+}
+section:nth-child(4)>article>p:nth-child(4){
+    font-size: 0.71cm;
+    width: 16cm;
+    border-top: gray solid;
+    padding-top: 0.6cm;
+}
+
+section:nth-child(4)>article>div:nth-child(2){
+    font-size: 0.7cm;
+    width: 6cm;
+    margin-right: 0%;
+    display: inline-block;
+}
+section:nth-child(4)>article>div:nth-child(2)>div:nth-child(1){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="https://www.thymeleaf.org/">>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MobiLeLeLe</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <script src="/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div th:replace="fragments/navbar::navbar" ></div>
+
+
+<div class="container-fluid">
+    <h2 class="text-center text-white mt-5">Details</h2>
+    <div class="offers row mx-auto d-flex flex-row justify-content-center" th:object="${offerView}">
+        <div class="offer card col-sm-4 col-md-3  col-lg-4 m-1 p-0">
+
+            <div class="card-body pb-12">
+                <h3 class="card-title">
+                    Offer ID: <span th:text="*{id}"> 1</span> <br> Year: <span th:text="*{year}"> 1</span>  <br>   Brand: <span th:text="*{brand}"> Opel</span> <br>   Model name: <span th:text="*{model}"> Astra</span></h3>
+            </div>
+            <ul class="offer-details list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="card-text">Mileage: <span th:text="*{mileage}">• Mileage</span></div>
+                    <div class="card-text">Price: <span th:text="*{price}">• Price</span></div>
+                    <div class="card-text">Engine type: <span th:text="*{engine}">• Engine type</span></div>
+                    <div class="card-text">Transmission type:<span th:text="*{transmission}">• Transmission type</span></div>
+                    <div class="card-text">Offer created: <span th:text="*{created}">• Offer created</span></div>
+                    <div class="card-text">Offer modified: <span th:text="*{modified}">• Offer modified</span></div>
+                    <div class="card-text">Seller: <span th:text="*{seller}">• Seller - First and Last name</span></div>
+                    <div class="card-text">Description: <span th:text="*{description}">• Description</span></div>
+                </li>
+            </ul>
+            <div class="d-flex justify-content-between">
+
+                <form th:method="delete" th:action="@{/offers/details/{id}(id=*{id})}">
+                    <input type="submit" th:method="delete" th:href="@{/offers/details/{id}(id=*{id})}" th:value="Update">
+                </form>
+                <form th:method="delete" th:action="@{/offers/details/{id}(id=*{id})}">
+                    <input type="submit" th:method="delete" th:href="@{/offers/all}" th:value="Delete">
+                </form>
+
+            </div>
+        </div>
+        <div class="offer card col-sm-2 col-md-3  col-lg-4 m-1 p-0">
+            <img th:src="*{imageUrl}" class="card-img-top" alt="Car image">
+        </div>
+    </div>
+</div>
+
+<div>
+    <footer></footer>
+</div>
+
+</body>
+</html>

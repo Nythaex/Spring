@@ -1,0 +1,24 @@
+ol {
+    background-color: rgba(198, 207, 207, 0.774);
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
+    height: 23em;
+    list-style-position: inside;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+
+ol>header {
+    color: rgba(1, 97, 153, 0.548);
+    text-align: center;
+}
+
+ol>li {
+    display: inline-flexbox;
+    margin-left: 30%;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    
+    
+}

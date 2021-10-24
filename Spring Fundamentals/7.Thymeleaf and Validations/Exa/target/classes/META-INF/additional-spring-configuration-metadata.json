@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "sql.init.mode",
+      "type": "java.lang.String",
+      "description": "Description for sql.init.mode."
+  }
+] }

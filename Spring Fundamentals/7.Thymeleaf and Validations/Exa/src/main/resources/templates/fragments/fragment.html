@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="navbar" class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav">
+        <a class="nav-item nav-link text-white" href="/companies/add">Add Company</a>
+        <a class="nav-item nav-link text-white" href="/employees/add">Add Employee</a>
+        <a class="nav-item nav-link text-white" href="/companies/all">All Companies</a>
+        <a class="nav-item nav-link text-white" href="/employees/all">All Employees</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.left-boder{
+    border-left: solid 4px gray ;
+    display: inline-block;
+    padding-left: 0.9cm;
+    margin-left: 4cm;
+    margin-right: 23cm;
+    color: #656565;
+}
+.left-boder:nth-child(2){
+    margin-right: 6cm
+}
+.left-boder>h1{
+  font-size: 1.5cm;
+}
+.left-boder>p{
+    font-size: 0.7cm;
+}
+main{
+    margin-left: 4cm;
+    margin-top: 2cm;
+}
+header{
+    margin-top: 2cm;
+}
+section>article{
+    margin-top: 1cm;
+    display: inline-block;
+    margin-right: 0cm;
+    width: 15.4cm;
+    padding-right: 2cm;
+    vertical-align: text-top;
+}
+main div{
+    display: inline-block;
+    font-size: 0.9cm;
+
+    
+}
+article>img{
+    width: 20cm;
+    height: 15cm;
+    margin-left: 4.5cm;
+}

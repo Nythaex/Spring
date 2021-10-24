@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Current language <span th:text="${htmlLang}">English</span></div>
+<form
+        th:action="@{/}" th:method="post">Choose language:
+
+    <select
+     name="requestLanguage">
+        <option value="en" th:selected="(${htmlLang} == 'en')">English</option>
+        <option value="fr" th:selected="(${htmlLang} == 'fr')">France</option>
+        <input type="submit" value="submit"/>
+    </select></form>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+section {
+    display: inline-block;
+    
+}
+
+body {}
+
+main {
+    margin: 0 20cm;
+    margin-top: 4cm;
+}
+
+section:nth-child(2):hover {
+    vertical-align: 880%;
+}
+
+section:first-child {
+    background: url(https://wallpaperaccess.com/full/5418616.jpg) no-repeat;
+    border-top-left-radius: 0.5cm;
+    border-bottom-left-radius: 0.5cm;
+    color: white;
+    height: 25cm;
+    width: 13cm;
+}
+
+section:first-child>p {
+    font-size: 0.7cm;
+    text-align: center;
+    padding-top: 18cm;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+section:first-child>h1 {
+    font-size: 1cm;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+section:nth-child(2) {
+    border: solid black;
+    background-color: white;
+    border-top-right-radius: 0.5cm;
+    border-bottom-right-radius: 0.5cm;
+    color: white;
+    height: 25cm;
+    width: 13cm;
+}
+
+i {
+    padding-left: 6cm;
+}
+
+form {
+    text-align: left;
+    color: gray;
+    padding-top: 6cm;
+    padding-left: 2cm;
+}
+
+form>label {
+    margin-bottom: 2cm;
+    text-align: left;
+    font-size: 0.7cm;
+    color: slateblue;
+}
+
+form>input {
+    
+    font-size: 0.7cm;
+    margin-bottom: 1.5cm;
+    border-color: slateblue;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 1.2cm;
+    width: 9.2cm;
+
+}   
+#firstB{
+    
+    float:right;
+    border: none;
+    background-color: slateblue;
+    color: white;
+    font-size: 0.6cm;
+    margin-right: 5cm;
+    height: 2cm;
+    width: 3cm;
+    border-bottom-left-radius: 4.4cm;
+    border-bottom-right-radius: 4.4cm;
+    border-top-left-radius: 0.0cm;
+    border-top-right-radius: 0.0cm;
+}
+#firstB:hover{
+    
+    float:right;
+    border: none;
+    background-color: slateblue;
+    color: white;
+    font-size: 1.5cm;
+     margin-right: 0%;
+    height: 3.5cm;
+    width: 13cm;
+    border-bottom-left-radius: 4.4cm;
+    border-bottom-right-radius: 4.4cm;
+    border-top-left-radius: 0.0cm;
+    border-top-right-radius: 0.5cm;
+    cursor: pointer;
+}
+
+#secondB{
+    float:right;
+    border: none;
+    background-color: slateblue;
+    color: white;
+    font-size: 0.6cm;
+    margin-top: 2.5cm;
+    margin-right: 5cm;
+    height: 2cm;
+    width: 3cm;
+    border-bottom-left-radius: 0.0cm;
+    border-bottom-right-radius: 0.0cm;
+    border-top-left-radius: 4.4cm;
+    border-top-right-radius: 4.4cm;
+}
+#secondB:hover{
+    float:right;
+    border: none;
+    background-color: slateblue;
+    color: white;
+    font-size: 1.5cm;
+    margin-top: 1cm;
+    margin-right: 0%;
+
+    height: 3.5cm;
+    width: 13cm;
+    border-bottom-left-radius: 0.0cm;
+    border-bottom-right-radius: 0.5cm;
+    border-top-left-radius: 4.4cm;
+    border-top-right-radius: 4.4cm;
+    cursor: pointer;
+}

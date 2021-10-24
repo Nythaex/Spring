@@ -1,0 +1,33 @@
+ul li{
+    display: inline;
+    font-size: 0.89cm;
+    padding-left: 40px;
+    
+   
+  }
+  ul{
+    text-align: center;
+    text-shadow: aqua;
+     background-color: rgb(133, 139, 133);
+     padding-bottom: 5mm;
+     padding-top: 5mm;
+    margin: 0%;
+     
+  }
+  body{
+      margin: auto; 
+  }
+  
+a:hover{
+    color: white;
+    background-color: green;
+}
+a{
+    text-decoration: none;
+    color: green;
+    
+}
+header{
+    color: violet;
+    
+}

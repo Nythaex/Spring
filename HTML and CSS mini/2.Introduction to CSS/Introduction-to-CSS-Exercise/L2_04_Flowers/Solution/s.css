@@ -1,0 +1,100 @@
+body {
+    margin: 0 15cm;
+    height: fit-content;
+}
+ul>li{
+    display: inline-block;
+    padding-left: 1cm;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(214,116,114);
+}
+nav{
+ text-align: center;
+}
+h1,h4,p,footer{
+    text-align: center;
+}
+h1{
+    font-size: 0.8cm;
+}
+section>article{
+    display: inline-block;
+}
+img{
+    height: 2cm;
+    width: 2cm;
+}
+
+#image{
+    background-image: url("../Requirements-and-Resources/Images/header-flower.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 14.1cm;
+    color: rgb(214,116,114);
+
+    text-align: center;
+    padding-top: 3cm;
+}
+#image>article>p{
+    width: 12cm;
+    font-size: 0.5cm;
+}
+
+section:nth-child(2){
+    background-color: rgb(214,116,114);
+    color: white;
+    height: 8cm;
+    text-align: center;
+}
+section:nth-child(2)>article>p{
+     width: 13cm;
+     font-size: 0.5cm;
+     padding-bottom: 0.5cm;
+}
+section:nth-child(2)>article>h4{
+     font-size: 0.7cm;
+}
+#button{
+    color:rgb(214,116,114) ;
+    height: 1cm;
+    width: 3cm;
+    border-radius: 0.2cm;
+    border: none;
+}
+section:nth-child(3)>article>p{
+    width: 6cm;
+    padding-top: 0cm;
+    
+}
+
+section:nth-child(3)>h4{
+    padding-bottom: 1cm;
+    border-bottom: 12;
+}
+section:nth-child(2)>article>h4{
+    padding-bottom: 0.5cm;
+}
+h1{
+    padding-bottom: 1cm;
+}
+
+section:nth-child(3)>article{
+    vertical-align: top;
+    padding-right: 1.5cm;
+    padding-left: 1.5cm;
+    
+}
+section:nth-child(3){
+   text-align: center;
+}
+
+footer{
+    background-color:rgb(214,116,114);
+    color: white;
+    height: 0.8cm;
+    padding-top: 12px;
+    
+}

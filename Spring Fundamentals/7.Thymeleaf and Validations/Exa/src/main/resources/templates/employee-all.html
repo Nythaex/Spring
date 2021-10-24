@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedOut</title>
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-toggler bg-dark" th:include="fragments/fragment::navbar">
+        navbar
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h2 class="text-center text-dark bg-light rounded-circle mt-5">All employees</h2>
+        <hr style="width: 50%"/>
+        <div class='row mb-4 d-flex justify-content-around'>
+            <div class="col-md-4 d-flex flex-column bg-text mb-3 rounded" th:each="e:${employees}"
+                 th:object="${e}">
+                <h2>Full name: <span th:text="*{firstName}">Mitko</span> <span th:text="*{lastName}">Mitkov</span></h2>
+                <h4>Job title: <span th:text="*{jobTitle}">Digger</span></h4>
+                <h4>Birth Date: <span th:text="*{birthdate}">12/10/2001</span></h4>
+                <h4><a class="btn-block" th:href="@{/employees/all/{id}(id=*{id})}">Detail info</a></h4>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer id="footer">
+    <div class="container-fluid bg-transparent rounded">
+        <div class="text-white p-2 text-center">&copy; Spring Team 2020. All rights reserved.</div>
+    </div>
+</footer>
+</body>
+</html>
