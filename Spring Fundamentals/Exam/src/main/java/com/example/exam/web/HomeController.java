@@ -5,11 +5,11 @@ import com.example.exam.model.entity.Ship;
 import com.example.exam.model.view.ViewShip;
 import com.example.exam.service.ShipService;
 import com.example.exam.service.UserService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.Map;
@@ -63,4 +63,9 @@ public class HomeController {
         }
         return "index";
     }
+
+
+
+
+
 }

@@ -6,11 +6,21 @@ import org.springframework.web.context.annotation.SessionScope;
 @Component
 @SessionScope
 public class CurrentUser {
+    private Long id;
     private String username;
     private String firstName;
     private String lastName;
     private Boolean isLoggedIn;
     private String role;
+
+    public Long getId() {
+        return id;
+    }
+
+    public CurrentUser setId(Long id) {
+        this.id = id;
+        return this;
+    }
 
     public String getRole() {
         return role;

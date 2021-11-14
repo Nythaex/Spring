@@ -4,6 +4,7 @@ import com.example.lab.models.entity.Brand;
 import com.example.lab.models.entity.Models;
 import com.example.lab.repos.ModelRepository;
 import com.example.lab.services.ModelService;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,5 +22,10 @@ public class ModelServiceImpl implements ModelService {
         modelRepository.findAllByBrand(brand);
 
         return modelRepository.findAllByBrand(brand);
+    }
+
+    @Override
+    public List<String> getAll() {
+        return modelRepository.findAllModels();
     }
 }

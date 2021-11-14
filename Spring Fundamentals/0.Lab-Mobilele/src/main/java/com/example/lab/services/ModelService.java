@@ -9,4 +9,6 @@ import java.util.List;
 @Service
 public interface ModelService {
     List<Models> getAllByBrand(Brand brand);
+
+    Object getAll();
 }

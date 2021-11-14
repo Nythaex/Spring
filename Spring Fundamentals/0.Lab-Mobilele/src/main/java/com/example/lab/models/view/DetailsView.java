@@ -13,14 +13,14 @@ public class DetailsView {
 
     private Long id;
     private String description;
-    @Enumerated(EnumType.STRING)
-    private Engine engine;
+
+    private String engine;
     private String imageUrl;
     private Integer mileage;
     private BigDecimal price;
     private String brand;
-    @Enumerated(EnumType.STRING)
-    private Transmission transmission;
+
+    private String transmission;
     private Integer year;
     private LocalDateTime created;
     private LocalDateTime modified;
@@ -29,21 +29,6 @@ public class DetailsView {
 
     private String seller;
 
-    public DetailsView(Long id,String description, Engine engine, String imageUrl, Integer mileage, BigDecimal price,String brand, Transmission transmission, Integer year, LocalDateTime created, LocalDateTime modified, String model, String seller) {
-        this.description = description;
-        this.engine = engine;
-        this.imageUrl = imageUrl;
-        this.mileage = mileage;
-        this.price = price;
-        this.transmission = transmission;
-        this.year = year;
-        this.created = created;
-        this.modified = modified;
-        this.model = model;
-        this.seller = seller;
-        this.id=id;
-        this.brand=brand;
-    }
 
     public String getBrand() {
         return brand;
@@ -55,6 +40,22 @@ public class DetailsView {
     }
 
     public DetailsView() {
+    }
+
+    public DetailsView(Long id, String description, String engine, String imageUrl, Integer mileage, BigDecimal price, String brand, String transmission, Integer year, LocalDateTime created, LocalDateTime modified, String model, String seller) {
+        this.id = id;
+        this.description = description;
+        this.engine = engine;
+        this.imageUrl = imageUrl;
+        this.mileage = mileage;
+        this.price = price;
+        this.brand = brand;
+        this.transmission = transmission;
+        this.year = year;
+        this.created = created;
+        this.modified = modified;
+        this.model = model;
+        this.seller = seller;
     }
 
     public Long getId() {
@@ -75,11 +76,11 @@ public class DetailsView {
         return this;
     }
 
-    public Engine getEngine() {
+    public String getEngine() {
         return engine;
     }
 
-    public DetailsView setEngine(Engine engine) {
+    public DetailsView setEngine(String engine) {
         this.engine = engine;
         return this;
     }
@@ -111,11 +112,11 @@ public class DetailsView {
         return this;
     }
 
-    public Transmission getTransmission() {
+    public String getTransmission() {
         return transmission;
     }
 
-    public DetailsView setTransmission(Transmission transmission) {
+    public DetailsView setTransmission(String transmission) {
         this.transmission = transmission;
         return this;
     }

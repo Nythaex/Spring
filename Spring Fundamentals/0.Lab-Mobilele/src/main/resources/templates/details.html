@@ -40,11 +40,11 @@
             </ul>
             <div class="d-flex justify-content-between">
 
-                <form th:method="delete" th:action="@{/offers/details/{id}(id=*{id})}">
-                    <input type="submit" th:method="delete" th:href="@{/offers/details/{id}(id=*{id})}" th:value="Update">
+                <form th:method="get" th:action="@{/offers/update/{id}(id=*{id})}">
+                    <input type="submit"  th:value="Update">
                 </form>
                 <form th:method="delete" th:action="@{/offers/details/{id}(id=*{id})}">
-                    <input type="submit" th:method="delete" th:href="@{/offers/all}" th:value="Delete">
+                    <input type="submit"  th:value="Delete">
                 </form>
 
             </div>

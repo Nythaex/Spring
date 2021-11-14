@@ -14,12 +14,13 @@ import java.time.LocalDateTime;
 public class Offer extends BasicEntity {
     @Column(columnDefinition = "TEXT")
     private String description;
-    @Enumerated(EnumType.STRING)
+
     private Engine engine;
+
     private String imageUrl;
     private Integer mileage;
     private BigDecimal price;
-    @Enumerated(EnumType.STRING)
+
     private Transmission transmission;
     private Integer year;
     private LocalDateTime created;

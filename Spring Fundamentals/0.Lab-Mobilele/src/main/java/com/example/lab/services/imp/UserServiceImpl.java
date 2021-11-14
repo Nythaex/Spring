@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
         User user=userRepository.findUserByUsername(loginBinding.getUsername());
         if (user!=null&&user.getPassword().equals(loginBinding.getPassword()))
         {
-            currentUser.setUsername(user.getUsername()).setFirstName(user.getFirstName()).setLastName(user.getLastName()).setLoggedIn(true).setRole(user.getRole().getName().toString());
+            currentUser.setUsername(user.getUsername()).setFirstName(user.getFirstName()).setLastName(user.getLastName()).setLoggedIn(true).setRole(user.getRole().getName().toString()).setId(user.getId());
             return true;
         }
         return false;

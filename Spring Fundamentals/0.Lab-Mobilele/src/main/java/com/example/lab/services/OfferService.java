@@ -1,5 +1,6 @@
 package com.example.lab.services;
 
+import com.example.lab.models.binding.AddOfferBinding;
 import com.example.lab.models.entity.Offer;
 import com.example.lab.models.view.DetailsView;
 import com.example.lab.models.view.OfferView;
@@ -15,4 +16,9 @@ public interface OfferService {
     DetailsView getOfferById(Long id);
 
     void deleteById(Long id);
+
+    void save(AddOfferBinding addOfferBinding);
+
+
+    void update(AddOfferBinding addOfferBinding, Long id);
 }
