@@ -1,0 +1,27 @@
+@CookieValue -взема куки с това име
+HttpServletResponse-записва кукита
+@PrePercist -преди да се създаде ентитито,@PostPercist- след като се създаде
+@PostConstruct -след интициализация на bean, @PreDestroy- преди унищожаване
+@RequestParam (defaultValue = "test",required = false )- да се вземе от request-а
+@Qualifier,@Primary-предопичитание на бийн
+@PathVariable-поставя променлива в пътя на URL
+@CrossOrigin-служи за използването от клиент на друг сървър
+HttpSession -слага атрибути на сесията които могат да се достъпят ,в thymeleaf чрез #session,можеш да чистиш сесията 
+ResponseCookie- build за куки
+@RequestHeader-`чете header
+org.springframework.validation.BindingResult.инстанцията на класа -за да запазиш грешките
+
+
+
+@ResponseBody-слага се на get заявки за да върне обект json
+@RequestBody-взема се от клиента и го прави на обект от json
+@ResponseStatus(HttpStatus.OK)
+ResponseEntity<Game> -използва се да връща обект 
+Filter-се имплементрира и във метода filterChain прави филтрацията  със вече добавените в request и response атрибути,след това се достъпват като се вземе съответният атрибут от сесията
+HandlerInterceptor се имплементира и може се overwrite-ва от три метода (preHandle, afterCompletion, postHandle), трябва да има Configuration който да imp WebMvcConfigurer който overwrite-ва addInterceptors и регистрира мои интерсептори
+@ExceptionHandler създава метод който хваща exeption-ите споменати в скобите му, само за определения контролер в който стои
+@ControllerAdvice слага се на калс в който се слагат @ExceptionHandler които работят за целия проект
+@EventListener(Example.class)- слуша за примерният евент "example" и изпълнява
+ApplicationEventPublisher-публикова евента за слушане
+ @Scheduled(cron = "59 59 23 * * ?")-пример за нещо което ще се изпълнява в определено време
+@NamedEntityGraph-слага се в entity-то за да каже какво да дръпне заявката от базата когато на заявката и се сложи анотацията @EntityGraph(value="името което седи в първата анотация в entity-то")
